@@ -120,7 +120,7 @@ class importData
         $this->data = $data;
         $this->users = $users;
         $pdo = new PDO($this->dsn, $this->user, $this->password);
-        $pdo->exec('CREATE DATABASE '.$this->dbName);
+        $pdo->exec('CREATE DATABASE ' . $this->dbName);
         $this->pdo = new PDO($this->dsn . ";dbname=" . $this->dbName, $this->user, $this->password);
 
         $this->createTables();

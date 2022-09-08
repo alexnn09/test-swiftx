@@ -169,8 +169,8 @@ class api
             fio = '" . $this->fields["fio"] . "',
             phone = '" . $this->fields["phone"] . "',
             post = '" . $this->fields["post"] . "',
-            office = '" . $this->fields["office_id"]. "'
-        WHERE id='" . $this->fields["id"]."'";
+            office = '" . $this->fields["office_id"] . "'
+        WHERE id='" . $this->fields["id"] . "'";
 
         $this->pdo->exec($query);
         $this->response([]);
